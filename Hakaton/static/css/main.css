@@ -1,0 +1,57 @@
+body{
+    margin: auto;
+    font-family: Arial;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.card{
+    text-align: center; /* Вирівнювання тексту */
+    width: 200px;
+    margin: 30px;
+    padding: 20px;
+
+    background-color: #fff;
+    border-radius: 9%;
+    box-shadow: 0 5px 10px #ccc;
+}
+.card-width{
+    text-align: center; /* Вирівнювання тексту */
+    width: 400px;
+    margin: 30px;
+    padding: 20px;
+    
+    background-color: #fff;
+    border-radius: 20%;
+    box-shadow: 0 5px 10px #ccc;
+}
+.card-text{
+    font-size: 14px;
+    color: aqua;
+}
+.card-photo{
+    display: block;
+    width: 60%;
+    height: 60%;
+
+    margin: 0 auto;
+    border-radius: 20%;
+}
+.card-photo-width{
+    display: block;
+    width: 70%;
+    height: 70%;
+
+    margin: 0 auto;
+    border-radius: 20%;
+}
+
+.container-CARD{
+    justify-content: center; /* Вирівнювання по вісі Oy */
+    align-content: center; /* Вирівнювання по вісі Ox */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+.text-color{
+    color: #05bd4f
+}
