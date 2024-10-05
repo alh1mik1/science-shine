@@ -24,7 +24,7 @@ def about():
     return render_template('about.html')
 
 
-@app.route('/post_1')
+@app.route('/exoplanets.html')
 def post_1():
     file_write(10)
     return render_template('post_1.html')
