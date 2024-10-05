@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+import os, sys
 
 app = Flask(__name__)
 
@@ -11,7 +12,7 @@ def file_write(temp):
 @app.route('/index')
 @app.route('/')
 def index():
-    return render_template("index.html")
+    return render_template("/index.html")
 
 
 @app.route('/Progress')
@@ -71,6 +72,10 @@ def post_8():
     file_write(10)
     return render_template('post_8.html')
 
+print(os.path.abspath(__file__))
+print(os.getcwd()) 
+print(os.listdir())
 
 if __name__ == '__main__':
     app.run(debug=True)
+
